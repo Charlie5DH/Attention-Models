@@ -47,6 +47,10 @@ The attention mechanism was born to help memorize long source sentences in neura
 
 In other words, for each input that the LSTM (Encoder) reads, the attention-mechanism takes into account several other inputs at the same time and decides which ones are important by attributing different weights to those inputs. The Decoder will then take as input the encoded sentence and the weights provided by the attention-mechanism. 
 
+## Context Vector 
+
+Context vector is also known as thought vector with sentence embedding information inside, which is the final hidden state of the encoder. An encoder processes the input sequence and compresses the information into a context vector of a **fixed length**. This representation is expected to be a good summary of the meaning of the whole source sentence.
+
 ## The Encoder
 
 Say, we have a source sequence `x` (dates) of length `n` and try to output a target sequence `y` of length. `x = [x_1,...,x_n]` ; `y = [y1,...,y_m]`
